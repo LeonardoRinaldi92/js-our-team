@@ -30,3 +30,25 @@ const team = [
       image: 'barbara-ramos-graphic-designer.jpg',
     },
   ];
+
+  const container = document.querySelector(".container")
+
+  console.log (container)
+
+  for (i=0; i<team.length; i++){
+    let singolapersona = team[i]
+    container.innerHTML += `
+    <div class="box">
+        <img src="./assets/img/${team[i].image}" alt="">
+        <div class="box-scritte">
+            <h3>${team[i].name}</h3>
+            <span>${team[i].role}</span>
+        </div>
+    </div>`
+    for ( let key in singolapersona){
+        console.log (key)
+        console.log (singolapersona[key])
+    }
+  }
+
+  

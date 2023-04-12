@@ -5,7 +5,8 @@
 }
 
 body {
-    background-color: rgb(235, 229, 229)
+    background-color: rgb(235, 229, 229);
+    height: 100vh;
 }
 
 .upper {
@@ -26,17 +27,23 @@ header {
 
 }
 
+main {
+    height: 90vh;
+}
+
 .container {
     margin: 0 auto;
     width: 70%;
     margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;}
+    justify-content: space-between;
+}
 
 .box {
     flex-basis: 32%;
     background-color: white;
+    margin-bottom: 2rem;
 }
 
  .box img {
