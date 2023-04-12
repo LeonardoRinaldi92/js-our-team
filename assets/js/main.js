@@ -41,7 +41,7 @@ const team = [
   stampa = setInterval(function(){  
     let singolapersona = team[i]
     container.innerHTML += `
-    <div style="animation: ${(i+1)/2}s ease 0s  normal none running fadein;" class="box">
+    <div class="box">
         <img src="./assets/img/${team[i].image}" alt="">
         <div class="box-scritte">
             <h3>${team[i].name}</h3>
@@ -57,6 +57,6 @@ const team = [
 
     if (i == team.length){
     clearInterval(stampa);}
-  },1)
+  },1000)
 
   
