@@ -34,8 +34,11 @@ const team = [
   const container = document.querySelector(".container")
 
   console.log (container)
+  
 
-  for (i=0; i<team.length; i++){
+  let i = 0
+
+  stampa = setInterval(function(){  
     let singolapersona = team[i]
     container.innerHTML += `
     <div class="box">
@@ -49,6 +52,11 @@ const team = [
         console.log (key)
         console.log (singolapersona[key])
     }
-  }
+
+    i++
+
+    if (i == team.length){
+    clearInterval(stampa);}
+  },1000)
 
   
