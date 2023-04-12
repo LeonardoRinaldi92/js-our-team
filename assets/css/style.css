@@ -27,10 +27,24 @@ header {
 }
 
 .container {
+    margin: 0 auto;
     width: 70%;
     margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;}
+
+.box {
+    flex-basis: 32%;
+    background-color: white;
 }
 
-.box 
+ .box img {
+    width: 100%;
+    display: block;
+ }
+
+ .box-scritte {
+    padding: 1rem;
+    text-align: center;
+ }
